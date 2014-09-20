@@ -8,10 +8,10 @@ makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
         ## Define set function; can be used to change (and cache) the matrix to be solved, resets solution to NULL
         ## not used in cacheSolve but very useful both for testing and for expanded functionality.
-     set <- function(y) {
+    set <- function(y) {
          x <<- y
          m <<- NULL
-     }
+    }
         ## Define get function; can be used to return the matrix to be solved.
     get <- function() x
         ## Define setinverse function; can be used to cache the newly calculated inverse of initial matrix. 
